@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeanré's | Modern Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Add loader to the HTML -->
+    
+   
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>JO</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#featured" class="nav-item">Shop</a>
+                <a href="#collections" class="nav-item">Collections</a>
+                <a href="#about" class="nav-item">About</a>
+            </div>
+            <div class="nav-icons">
+                <button class="icon-btn search-toggle"><i class="fas fa-search"></i></button>
+                <button class="icon-btn" id="account-btn"><i class="fas fa-user"></i></button>
+                <button class="icon-btn cart-toggle"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></button>
+                <button class="icon-btn menu-toggle" id="menu-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="search-overlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for products...">
+                <button class="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Rest of your HTML remains the same -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <h3>Menu</h3>
+                <button class="mobile-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="mobile-menu-items">
+                <a href="#featured">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#">Account</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-empty">
+            <p>Your cart is empty</p>
+            <button class="btn btn-primary continue-shopping">Continue Shopping</button>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-totals">
+                <div class="cart-subtotal">
+                    <span>Subtotal</span>
+                    <span class="subtotal-amount">R0.00</span>
+                </div>
+                <div class="cart-shipping">
+                    <span>Shipping</span>
+                    <span>Calculated at checkout</span>
+                </div>
+            </div>
+            <button class="btn btn-primary checkout-btn" disabled>Checkout • R0.00</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animate-up">Essentials for Modern Living</h1>
+                <p class="animate-up">Curated collections for the discerning minimalist</p>
+                <a href="#featured" class="btn btn-primary animate-up">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-products">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Discover our latest additions</p>
+            </div>
+            <div class="products-grid">
+                <!-- Products will be dynamically populated -->
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join Our Community</h2>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="collections" class="collections">
+            <div class="section-header">
+                <h2>Collections</h2>
+                <p>Shop by category</p>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://via.placeholder.com/500x600" alt="Home Decor">
+                        <div class="collection-overlay">
+                            <h3>Home Decor</h3>
+                            <a href="#" class="btn btn-outline">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://via.placeholder.com/500x600" alt="Kitchen & Dining">
+                        <div class="collection-overlay">
+                            <h3>Kitchen & Dining</h3>
+                            <a href="#" class="btn btn-outline">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-item">
+                    <div class="collection-image">
+                        <img src="https://via.placeholder.com/500x600" alt="Accessories">
+                        <div class="collection-overlay">
+                            <h3>Accessories</h3>
+                            <a href="#" class="btn btn-outline">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Jeanré's Essentials was founded with a simple philosophy: beautiful, functional products shouldn't come at the expense of our planet. We curate collections of sustainable essentials that bring joy to everyday living.</p>
+                    <p>Each item in our store is thoughtfully selected for its design, durability, and environmental impact. We partner with artisans and manufacturers who share our values of craftsmanship and ethical production.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x800" alt="About Jeanré">
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-feed">
+            <div class="section-header">
+                <h2>Follow Us on Instagram</h2>
+                <p>@Jeanré's_essentials</p>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <img src="https://via.placeholder.com/300x300" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://via.placeholder.com/300x300" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://via.placeholder.com/300x300" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://via.placeholder.com/300x300" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Jeanré's Essentials</h3>
+                <p>Essentials for modern living, curated with care for you and the planet.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Jeanré's Essentials. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product quick view modal -->
+    <div class="product-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-product">
+                <!-- Product detail will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
